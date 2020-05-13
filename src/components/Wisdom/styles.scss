@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    font-family: Parisienne;
     color: #fff;
     width: 100vw;
     height: 100vh;
@@ -23,9 +24,8 @@
         animation: fadeIn 5.5s ease-in both;
     }
     .the-title {
-        font-family: Parisienne;
         position: absolute;
-        left: calc(50vh)-26px;
+        left: calc(50vh)-24px;
         top: calc(50vw)-376px;
         font-size: 1.5rem;
         animation: fadeInTitleTwo 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
@@ -36,11 +36,11 @@
         font-size: 22px;
         border: 1px solid #fff;
         padding: 15px 25px;
-        border-radius: 15px;
+        border-radius: 20px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 32px;
         padding: 15px 50px;
-        margin: 10px;
+        margin: 10px auto;
         box-shadow: 2px 3px 3px #b7b7b7;
         animation: fadeInButton 7s ease-in both;
 
@@ -70,6 +70,20 @@
         }
         h1 {
             animation: fadeIn 2.25s ease-in both;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .quote-container {
+        .the-title {
+            font-size: 18px;
+        }
+        .new-quote {
+            animation: fadeInButton 3.55s ease-in both;
+        }
+        h1 {
+            font-size: 36px;
         }
     }
 }

@@ -30,7 +30,7 @@ function WisdomQuote() {
       </p>
       <h1>" {quote} "</h1>
       <div role='button' className='new-quote' onClick={changeQuote}>
-        more wisdom
+        More Wisdom
       </div>
     </div>
   );
