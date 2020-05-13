@@ -12,6 +12,7 @@ function WisdomQuote() {
   }, []);
 
   function randomNumber() {
+    console.log('hit');
     return Math.floor(Math.random() * 50);
   }
 
@@ -19,9 +20,15 @@ function WisdomQuote() {
     setQuote(randomQuote);
   }
 
+  function resetPage() {
+    window.location.reload();
+  }
+
   return (
     <div className='quote-container'>
-      <p className='the-title'>The Book of Angel</p>
+      <p className='the-title' onClick={resetPage}>
+        The Book of Angel
+      </p>
       <h1>" {quote} "</h1>
       <div role='button' className='new-quote' onClick={changeQuote}>
         more wisdom
