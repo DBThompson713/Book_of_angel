@@ -17,7 +17,7 @@ function WisdomQuote() {
   }
 
   function changeQuote() {
-    setQuote(randomQuote);
+    setQuote(Wisdom.quote[randomNumber()].quote);
   }
 
   function resetPage() {
