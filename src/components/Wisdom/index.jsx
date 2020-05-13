@@ -12,7 +12,6 @@ function WisdomQuote() {
   }, []);
 
   function randomNumber() {
-    console.log('hit');
     return Math.floor(Math.random() * 50);
   }
 
