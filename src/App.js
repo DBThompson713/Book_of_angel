@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import WisdomQuote from './components/Wisdom';
 import './App.css';
 

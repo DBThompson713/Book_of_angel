@@ -16,18 +16,14 @@ function WisdomQuote() {
   }
 
   function changeQuote() {
-    setQuote(Wisdom.quote[randomNumber()].quote);
+    setQuote(randomQuote);
   }
 
   return (
     <div className='quote-container'>
       <p className='the-title'>The Book of Angel</p>
       <h1>" {quote} "</h1>
-      <div
-        role='button'
-        className='new-quote button-press'
-        onClick={changeQuote}
-      >
+      <div role='button' className='new-quote' onClick={changeQuote}>
         more wisdom
       </div>
     </div>
