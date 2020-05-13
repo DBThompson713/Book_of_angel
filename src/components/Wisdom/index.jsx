@@ -21,10 +21,10 @@ function WisdomQuote() {
   useEffect(() => {
     setQuote(randomQuote);
 
-    const interval = setInterval(() => {
-      setQuote(Wisdom.quote[randomNumber()].quote);
-    }, 13000);
-    return () => clearInterval(interval);
+    // const interval = setInterval(() => {
+    //   setQuote(Wisdom.quote[randomNumber()].quote);
+    // }, 13000);
+    // return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
