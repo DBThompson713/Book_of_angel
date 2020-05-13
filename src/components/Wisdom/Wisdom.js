@@ -71,12 +71,12 @@ const Wisdom = {
     {
       _id: '5df8490dfgjd568634a83d0',
       quote:
-        'Imagine having a spoon. I just have a bunch of random spoons that belong to my general family\n',
+        'Imagine having a spoon... I just have a bunch of random spoons that belong to my general family\n',
     },
     {
       _id: '5df849482eyjeyjyey83d1',
       quote:
-        "imagine making my way downtown, but in Mark's accent, and he's just saying it",
+        "Imagine 'making my way downtown', but in Mark's accent... and he's just saying it",
     },
     {
       _id: '5df8494c2707tykks7a83d2',
@@ -88,7 +88,7 @@ const Wisdom = {
     },
     {
       _id: '5dfkty7074f833c7a83d4',
-      quote: 'I heard a gorilla can brush aside like 3 strong men like a twig',
+      quote: 'I heard a gorilla can brush aside 3 strong men like a twig',
     },
     {
       _id: '5df85bf78e95sdgeffd1',
@@ -139,7 +139,7 @@ const Wisdom = {
     },
     {
       _id: '5df9a7GOOSEYd2b068cd6451',
-      quote: 'please call me row 4',
+      quote: 'Please call me Row 4',
     },
     {
       _id: '5dfWEEEE8bd174c7bd212e0c',
@@ -160,7 +160,7 @@ const Wisdom = {
     },
     {
       _id: '500393a38bd174c0000qxf0d',
-      quote: '(About small talk) I feel like I’m fading away from existence',
+      quote: 'I feel like I’m fading away from existence',
     },
     {
       _id: '8d69a71a396da7dkr9cd6451',
@@ -173,7 +173,7 @@ const Wisdom = {
     {
       _id: '5dfad3a38bd174c00000036d',
       quote:
-        'I’d love to go to New England in the fall with a fucking Starbucks pumpkin thing',
+        'I’d love to go to New England in the fall with a f***ing Starbucks pumpkin thing',
     },
     {
       _id: '5df9a738566da7dkr9cd6451',
@@ -189,7 +189,7 @@ const Wisdom = {
     },
     {
       _id: '5df9a71a396da7dkr9lodk81',
-      quote: 'You say root beer and a tear falls down garrets eye',
+      quote: 'You say root beer and a tear falls down Garrets eye',
     },
     {
       _id: '5000994kd9s174c7bd212e0c',
@@ -197,7 +197,7 @@ const Wisdom = {
     },
     {
       _id: '5df9d8a38bd174c0000qxq0d',
-      quote: 'is there a good tech scene in jail?',
+      quote: 'Is there a good tech scene in jail?',
     },
     {
       _id: '588ff71a396da7dkr9cd6451',

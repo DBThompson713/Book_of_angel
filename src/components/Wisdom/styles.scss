@@ -2,17 +2,7 @@
 @import "./../../sass/_animations";
 
 .quote-container {
-    background-image: linear-gradient(
-        to bottom,
-        #000000,
-        #000000,
-        #000000,
-        #000000,
-        #000000,
-        #020202,
-        #030303,
-        #050505
-    );
+    background-image: linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #050505, #070707);
     position: fixed;
     top: 0;
     left: 0;
@@ -44,19 +34,25 @@
         position: fixed;
         bottom: 8.5vh;
         font-size: 22px;
-        border: 1px solid white;
+        border: 1px solid #fff;
         padding: 15px 25px;
         border-radius: 15px;
         text-decoration: none;
         font-size: 25px;
         padding: 15px 50px;
         margin: 10px;
-        box-shadow: 2px 3px 3px #fff;
+        box-shadow: 2px 3px 3px #b7b7b7;
         animation: fadeInButton 7s ease-in both;
+
+        &:hover {
+            background: rgb(7, 7, 7);
+        }
+
         &:active {
             outline: none;
             box-shadow: none;
             bottom: 8vh;
+            transition-duration: 0.2s;
         }
     }
 }
