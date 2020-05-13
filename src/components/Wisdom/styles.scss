@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Parisienne&display=swap");
 @import "./../../sass/_animations";
 
+$bg :linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #050505, #070707);
+
 .quote-container {
-    background-image: linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #050505, #070707);
+    width: 100vw;
+    height: 100vh;
+    background-image: $bg;
     position: fixed;
     top: 0;
     left: 0;
     font-family: Parisienne;
     color: #fff;
-    width: 100vw;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     h1 {
         font-family: Caveat;
@@ -21,16 +23,16 @@
         margin: 0 30px 0 15px;
         margin-bottom: 120px;
         opacity: 0;
-        animation: fadeIn 5.5s ease-in both;
+        animation: $quote;
     }
     .the-title {
         position: absolute;
-        left: calc(50vh)-24px;
+        left: calc(50vh)-20px;
         top: calc(50vw)-376px;
         font-size: 1.5rem;
-        animation: fadeInTitleTwo 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        animation: $title;
     }
-    .new-quote {
+    .more-wisdom {
         position: fixed;
         bottom: 8.5vh;
         font-size: 22px;
@@ -42,7 +44,7 @@
         padding: 15px 50px;
         margin: 10px auto;
         box-shadow: 2px 3px 3px #b7b7b7;
-        animation: fadeInButton 7s ease-in both;
+        animation: $button;
 
         &:hover {
             background: rgb(7, 7, 7);
@@ -60,16 +62,16 @@
 @media screen and (max-width: 975px) {
     .quote-container {
         .the-title {
-            animation: fadeInTitleTwoMobileMid 2s ease-in-out;
+            animation: $title-mid;
             position: absolute;
             top: 5px;
             left: 30px;
         }
-        .new-quote {
-            animation: fadeInButton 3.55s ease-in both;
+        .more-wisdom {
+            animation: $button-mid;
         }
         h1 {
-            animation: fadeIn 2.25s ease-in both;
+            animation: quote-mid;
         }
     }
 }
@@ -79,8 +81,8 @@
         .the-title {
             font-size: 18px;
         }
-        .new-quote {
-            animation: fadeInButton 3.55s ease-in both;
+        .more-wisdom {
+            animation: $button-mid;
         }
         h1 {
             font-size: 36px;

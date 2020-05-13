@@ -212,6 +212,15 @@ const Wisdom = {
       quote:
         'Imagine dying at a lunch table surrounded by a bunch of guys and you’re all just making fun of death',
     },
+    {
+      _id: '5dfaalsdc88bd1c0000qxf0d',
+      quote:
+        'Garret should combine his hobbies and make a gun that shoots boardgames',
+    },
+    {
+      _id: '5dfaalsdc98d884j000qxf0d',
+      quote: 'Alex has a dark past: he was in a Christmas cover band',
+    },
   ],
 };
 

@@ -6,22 +6,29 @@ function WisdomQuote() {
   const [quote, setQuote] = useState('');
   const randomQuote = Wisdom.quote[randomNumber()].quote;
 
-  useEffect(() => {
-    setQuote(randomQuote);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
+  // -------------------- FUNCTIONS
   function randomNumber() {
-    return Math.floor(Math.random() * 50);
+    return Math.floor(Math.random() * 52);
   }
-
   function changeQuote() {
     setQuote(Wisdom.quote[randomNumber()].quote);
   }
-
   function resetPage() {
     window.location.reload();
   }
+
+  // --------------------
+  useEffect(() => {
+    setQuote(randomQuote);
+
+    const interval = setInterval(() => {
+      setQuote(Wisdom.quote[randomNumber()].quote);
+    }, 13000);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // --------------------
 
   return (
     <div className='quote-container'>
@@ -29,7 +36,7 @@ function WisdomQuote() {
         The Book of Angel
       </p>
       <h1>" {quote} "</h1>
-      <div role='button' className='new-quote' onClick={changeQuote}>
+      <div role='button' className='more-wisdom' onClick={changeQuote}>
         More Wisdom
       </div>
     </div>
