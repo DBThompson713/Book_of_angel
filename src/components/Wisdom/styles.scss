@@ -71,7 +71,7 @@ $bg :linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #05
             animation: $button-mid;
         }
         h1 {
-            animation: quote-mid;
+            animation: $quote-mid;
         }
     }
 }
