@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Parisienne&display=swap");
 @import "./../../sass/_animations";
 
-$bg :linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #050505, #070707);
+$bg: linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #050505, #070707);
 
 .quote-container {
     width: 100vw;
@@ -21,7 +21,7 @@ $bg :linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #05
         font-family: Caveat;
         font-size: 52px;
         margin: 0 30px 0 15px;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         opacity: 0;
         animation: $quote;
     }
@@ -34,10 +34,10 @@ $bg :linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #05
     }
     .more-wisdom {
         position: fixed;
-        bottom: 8.5vh;
+        bottom: 6.75vh;
         font-size: 22px;
         border: 1px solid #fff;
-        border-top:1px solid #b7b7b7;
+        border-top: 1px solid #b7b7b7;
         padding: 15px 25px;
         border-radius: 20px;
         text-decoration: none;
@@ -54,7 +54,7 @@ $bg :linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #05
         &:active {
             outline: none;
             box-shadow: none;
-            bottom: 8vh;
+            bottom: 6.25vh;
             transition-duration: 0.2s;
         }
     }

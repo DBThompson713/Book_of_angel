@@ -184,6 +184,10 @@ const Wisdom = {
       quote: 'Can someone do an EB Games sales accent',
     },
     {
+      _id: '5dfad3a38bd17sss900qxf0d',
+      quote: 'What do you do?',
+    },
+    {
       _id: '5dfad3a38bd17499900qxf0d',
       quote: 'Imagine Ricky in the 90s',
     },
@@ -219,7 +223,11 @@ const Wisdom = {
     },
     {
       _id: '5dfaalsdc98d884j000qxf0d',
-      quote: 'Alex has a dark past: he was in a Christmas cover band',
+      quote: 'Alex has a dark past... he was in a Christmas cover band',
+    },
+    {
+      _id: '5dfaalsd84j84js9wls0xf0d',
+      quote: 'Hawaiian is the Nickelback of pizza',
     },
   ],
 };
