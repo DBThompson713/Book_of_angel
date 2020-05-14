@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Wisdom from './Wisdom';
 import './styles.scss';
 
+// Behold, the only wisdom worth preserving.
+// That which is contained within the Book of Angel.
+
 function WisdomQuote() {
   const [quote, setQuote] = useState('');
   const randomQuote = Wisdom.quote[randomNumber()].quote;
@@ -21,10 +24,10 @@ function WisdomQuote() {
   useEffect(() => {
     setQuote(randomQuote);
 
-    // const interval = setInterval(() => {
-    //   setQuote(Wisdom.quote[randomNumber()].quote);
-    // }, 13000);
-    // return () => clearInterval(interval);
+    const interval = setInterval(() => {
+      setQuote(Wisdom.quote[randomNumber()].quote);
+    }, 20000);
+    return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -37,7 +40,7 @@ function WisdomQuote() {
       </p>
       <h1>" {quote} "</h1>
       <div role='button' className='more-wisdom' onClick={changeQuote}>
-        More Wisdom
+        Receive Wisdom
       </div>
     </div>
   );
