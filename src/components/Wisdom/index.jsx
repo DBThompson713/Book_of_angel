@@ -7,31 +7,23 @@ import './styles.scss';
 
 function WisdomQuote() {
   const [quote, setQuote] = useState('');
-  const randomQuote = Wisdom.quote[randomNumber()].quote;
+  const quoteNum = Wisdom.length;
 
-  // -------------------- FUNCTIONS
-  function randomNumber() {
-    return Math.floor(Math.random() * 54);
+  function randomQuote() {
+    return Wisdom[Math.floor(Math.random() * quoteNum)];
   }
+
   function changeQuote() {
-    setQuote(Wisdom.quote[randomNumber()].quote);
+    setQuote(randomQuote());
   }
   function resetPage() {
     window.location.reload();
   }
 
-  // --------------------
   useEffect(() => {
-    setQuote(randomQuote);
-
-    // const interval = setInterval(() => {
-    //   setQuote(Wisdom.quote[randomNumber()].quote);
-    // }, 20000);
-    // return () => clearInterval(interval);
+    setQuote(randomQuote());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  // --------------------
 
   return (
     <div className='quote-container'>
