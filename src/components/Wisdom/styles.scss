@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Parisienne&display=swap");
-@import "./../../sass/_animations";
+@import './../../sass/resources.scss';
 
-$bg: linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #050505, #070707);
 
 .quote-container {
     width: 100vw;
@@ -33,13 +31,10 @@ $bg: linear-gradient(to bottom, #000000, #000000, #000000, #020202, #030303, #05
         animation: $title;
     }
     .more-wisdom {
+        @include border;
         position: fixed;
         bottom: 6.75vh;
         font-size: 22px;
-        border: 1px solid #fff;
-        border-top: 1px solid #b7b7b7;
-        padding: 15px 25px;
-        border-radius: 20px;
         text-decoration: none;
         font-size: 32px;
         padding: 15px 50px;

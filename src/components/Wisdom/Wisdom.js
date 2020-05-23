@@ -29,7 +29,7 @@ const Wisdom = [
   'Whats the tech scene like in North Korea',
   'Expand the Monkeysphere',
   'My surname is Ball, but they call me Mr. Ball',
-  "I'd rather watch a referee beat up a little girl than two soccer players fighting",
+  // "I'd rather watch a referee beat up a little girl than two soccer players fighting",
   'People look at the gorilla density and wonder, Who the f*** is this guy?',
   'Please call me Row 4',
   'To make MERN not MEAN',
