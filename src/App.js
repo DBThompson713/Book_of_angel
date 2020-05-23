@@ -6,6 +6,7 @@ function App() {
   return (
     <div className='App'>
       <WisdomQuote />
+      <p id='copyright'>©2020 Dale Thompson</p>
     </div>
   );
 }
