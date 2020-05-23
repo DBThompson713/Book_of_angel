@@ -1,87 +1,72 @@
 @import './../../sass/resources.scss';
 
-
 .quote-container {
-    width: 100vw;
-    height: 100vh;
-    background-image: $bg;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: $bg;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: Parisienne;
+  color: #fff;
+  h1 {
+    font-family: Caveat;
+    font-size: 52px;
+    margin: 0 30px 0 15px;
+    margin-bottom: 100px;
+    opacity: 0;
+    animation: $quote;
+    @include medium {
+      animation: $quote-mid;
+    }
+    @include tiny {
+      font-size: 36px;
+    }
+  }
+  .the-title {
+    position: absolute;
+    left: calc(50vh)-20px;
+    top: calc(50vw)-376px;
+    font-size: 1.5rem;
+    animation: $title;
+    @include medium {
+      animation: $title-mid;
+      position: absolute;
+      top: 5px;
+      left: 30px;
+    }
+    @include tiny {
+      font-size: 18px;
+    }
+  }
+  .more-wisdom {
+    @include border;
     position: fixed;
-    top: 0;
-    left: 0;
-    font-family: Parisienne;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        font-family: Caveat;
-        font-size: 52px;
-        margin: 0 30px 0 15px;
-        margin-bottom: 100px;
-        opacity: 0;
-        animation: $quote;
+    bottom: 6.75vh;
+    font-size: 22px;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 15px 50px;
+    margin: 10px auto;
+    animation: $button;
+    @include medium {
+      animation: $button-mid;
     }
-    .the-title {
-        position: absolute;
-        left: calc(50vh)-20px;
-        top: calc(50vw)-376px;
-        font-size: 1.5rem;
-        animation: $title;
-    }
-    .more-wisdom {
-        @include border;
-        position: fixed;
-        bottom: 6.75vh;
-        font-size: 22px;
-        text-decoration: none;
-        font-size: 32px;
-        padding: 15px 50px;
-        margin: 10px auto;
-        box-shadow: 2px 3px 3px #b7b7b7;
-        animation: $button;
 
-        &:hover {
-            background: rgb(7, 7, 7);
-        }
-
-        &:active {
-            outline: none;
-            box-shadow: none;
-            bottom: 6.25vh;
-            transition-duration: 0.2s;
-        }
+    &:hover {
+      background: rgb(7, 7, 7);
     }
-}
 
-@media screen and (max-width: 975px) {
-    .quote-container {
-        .the-title {
-            animation: $title-mid;
-            position: absolute;
-            top: 5px;
-            left: 30px;
-        }
-        .more-wisdom {
-            animation: $button-mid;
-        }
-        h1 {
-            animation: $quote-mid;
-        }
+    &:active {
+      outline: none;
+      box-shadow: none;
+      bottom: 6.25vh;
+      transition-duration: 0.2s;
     }
-}
-
-@media screen and (max-width: 350px) {
-    .quote-container {
-        .the-title {
-            font-size: 18px;
-        }
-        .more-wisdom {
-            animation: $button-mid;
-        }
-        h1 {
-            font-size: 36px;
-        }
-    }
+  }
 }

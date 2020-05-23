@@ -1,0 +1,13 @@
+
+
+@mixin medium {
+  @media (max-width: 975px) {
+    @content;
+  }
+}
+
+@mixin tiny {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
