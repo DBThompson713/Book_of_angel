@@ -14,7 +14,9 @@
   top: 13vh;
   right: -70px;
   opacity: 0.25;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   text-shadow: rgb(31, 30, 30) 2px 2px 6px;
   color: #fff;
 }

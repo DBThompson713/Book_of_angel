@@ -7,7 +7,15 @@
 }
 
 @mixin tiny {
-    @media (max-width: 350px) {
+    @media (max-width: 375px) {
       @content;
     }
   }
+
+@mixin ipad-portrait{
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    @content;
+  }
+}
+
+ 

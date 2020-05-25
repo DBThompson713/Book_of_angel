@@ -1,9 +1,35 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 $title: fadeInTitleTwo 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 $title-mid: fadeInTitleTwoMobileMid 2s ease-in-out;
 $quote: fadeIn 5.5s ease-in both;
 $button:fadeInButton 7s ease-in both;
 $button-mid:fadeInButton 3.55s ease-in both;
 $quote-mid: fadeIn 2.25s ease-in both;
+
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        translate3d: (0, -20%, 0);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+}
 
 
 @keyframes fadeIn {
@@ -19,13 +45,15 @@ $quote-mid: fadeIn 2.25s ease-in both;
     }
     to {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
     }
 }
 
-@keyframes fadeInTitleTwo {
+@-webkit-keyframes fadeInTitleTwo {
     0% {
-        transform: scale(0) translateY(0) translateX(0);
+        -webkit-transform: scale(0) translateY(0) translateX(0);
+                transform: scale(0) translateY(0) translateX(0);
     }
     20% {
         -webkit-transform: scale(4) translateY(0) translateX(0);
@@ -40,9 +68,28 @@ $quote-mid: fadeIn 2.25s ease-in both;
     }
 }
 
-@keyframes fadeInTitleTwoMobileMid {
+@keyframes fadeInTitleTwo {
     0% {
-        transform: scale(0);
+        -webkit-transform: scale(0) translateY(0) translateX(0);
+                transform: scale(0) translateY(0) translateX(0);
+    }
+    20% {
+        -webkit-transform: scale(4) translateY(0) translateX(0);
+    }
+
+    50% {
+        -webkit-transform: scale(4) translateY(0) translateX(0);
+    }
+
+    to {
+        -webkit-transform: scale(1) translateY(-20vw) translateX(-20vw);
+    }
+}
+
+@-webkit-keyframes fadeInTitleTwoMobileMid {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
     }
 
     50% {
@@ -53,16 +100,48 @@ $quote-mid: fadeIn 2.25s ease-in both;
         -webkit-transform: scale(1);
     }
 }
+
+@keyframes fadeInTitleTwoMobileMid {
+    0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+@-webkit-keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -20%, 0);
+                transform: translate3d(0, -20%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+}
 @keyframes fadeInButton {
     0% {
         opacity: 0;
     }
     80% {
         opacity: 0;
-        transform: translate3d(0, -20%, 0);
+        -webkit-transform: translate3d(0, -20%, 0);
+                transform: translate3d(0, -20%, 0);
     }
     100% {
         opacity: 1;
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
     }
 }
